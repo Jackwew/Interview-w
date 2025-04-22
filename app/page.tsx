@@ -54,10 +54,7 @@ export default function Home() {
     try {
       // 实际业务的登录逻辑，此处先用Promise模拟
       await new Promise(resolve => setTimeout(resolve, 1000))
-      console.log({
-        mobile: formData.mobile,
-        code: formData.code
-      })
+      console.log(formData)
     } finally {
       setIsSubmitting(false)
     }
